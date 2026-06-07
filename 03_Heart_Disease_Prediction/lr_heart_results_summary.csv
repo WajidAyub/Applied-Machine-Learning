@@ -1,0 +1,2 @@
+accuracy,precision,recall,f1,roc_auc,best_params
+0.8,0.0,0.0,0.0,0.48641093750000003,"{'clf__C': 0.01, 'clf__class_weight': None}"
