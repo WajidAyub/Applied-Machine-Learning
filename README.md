@@ -12,6 +12,8 @@ Welcome to my Applied Machine Learning Portfolio! This repository contains a cur
 | **[04. Pulsar Star Classification](./04_Pulsar_Star_Classification/)** | Astrophysics | Classification | Handling and evaluating models on complex, imbalanced astronomical datasets |
 | **[05. Decision Tree From Scratch](./05_Decision_Tree_From_Scratch/)** | Core ML | ID3 Algorithm, Information Gain | **Implemented ID3 completely from scratch**, calculating Entropy and Information Gain manually |
 | **[06. Breast Cancer Classification](./06_Breast_Cancer_Classification/)** | Healthcare | Random Forest vs Logistic Regression | Model comparison, advanced evaluation metrics (Precision, Recall, F1-Score, ROC-AUC) |
+| **[07. Cardiovascular Disease Prediction](./07_Cardiovascular_Disease_Prediction/)** | Healthcare | Logistic Regression, Deep EDA | Comprehensive data visualization, extensive exploratory data analysis (EDA), and confusion matrix evaluation |
+| **[08. Breast Cancer Deployment Pipeline](./08_Breast_Cancer_Deployment_Pipeline/)** | MLOps / Healthcare | Model Serialization | End-to-end pipeline including data scaling, model training, and exporting `.pkl` files for production deployment |
 
 ## 🛠️ Technologies & Skills
 * **Languages:** Python
