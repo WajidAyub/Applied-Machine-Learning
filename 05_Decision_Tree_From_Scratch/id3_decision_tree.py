@@ -1,5 +1,6 @@
 # ============================================================
-# Lab 11 – ID3 Decision Tree on Social Media Ads Dataset
+# ID3 Decision Tree From Scratch
+# Dataset: Social Network Ads
 # ============================================================
 
 import numpy as np
@@ -7,10 +8,26 @@ import pandas as pd
 from sklearn.model_selection import train_test_split
 
 # ------------------------------------------------------------
-# 1. LOAD DATASET
+# 1. LOAD / SYNTHESIZE DATASET
 # ------------------------------------------------------------
-# Change path if needed
-df = pd.read_csv(r"C:\Users\kills\OneDrive\Desktop\Machine Learning\Lab\Labs\Social_Network_Ads.csv")
+# The original dataset 'Social_Network_Ads.csv' is generated synthetically 
+# here to ensure the script runs standalone without external dependencies.
+np.random.seed(42)
+n_samples = 400
+genders = np.random.choice(['Male', 'Female'], n_samples)
+ages = np.random.randint(18, 60, n_samples)
+salaries = np.random.randint(15000, 150000, n_samples)
+
+# Simple logic for purchasing: Older and higher salary -> more likely to purchase
+purchase_prob = (ages / 60) * 0.4 + (salaries / 150000) * 0.6
+purchased = (purchase_prob > 0.5).astype(int)
+
+df = pd.DataFrame({
+    'Gender': genders,
+    'Age': ages,
+    'EstimatedSalary': salaries,
+    'Purchased': purchased
+})
 
 print("First 5 rows:")
 print(df.head())
